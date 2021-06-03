@@ -144,25 +144,25 @@
 
         <section class="sort">
           <h4 class="sort__title">Сортировка:</h4>
-            <ul class="sort__type-list">
-              <li class="sort__type-item">
-                <a class="sort__type-link sort__type-link--active">По цене</a>
-              </li>
-              <li class="sort__type-item">
-                <a class="sort__type-link" href="#">По типу</a>
-              </li>
-              <li class="sort__type-item">
-                <a class="sort__type-link" href="#">По популярности</a>
-              </li>
-            </ul>
-            <ul class="sort__order-list">
-              <li class="sort__order-item">
-                <a class="sort__order-link sort__order-link--active" aria-label="По убыванию"></a>
-              </li>
-              <li class="sort__order-item">
-                <a class="sort__order-link sort__order-link" href="" aria-label="По возрастанию"></a>
-              </li>
-            </ul>
+          <ul class="sort__type-list">
+            <li class="sort__type-item">
+              <a class="sort__type-link sort__type-link--active">По цене</a>
+            </li>
+            <li class="sort__type-item">
+              <a class="sort__type-link" href="#">По типу</a>
+            </li>
+            <li class="sort__type-item">
+              <a class="sort__type-link" href="#">По популярности</a>
+            </li>
+          </ul>
+          <ul class="sort__order-list">
+            <li class="sort__order-item">
+              <a class="sort__order-link sort__order-link--active" aria-label="По убыванию"></a>
+            </li>
+            <li class="sort__order-item">
+              <a class="sort__order-link sort__order-link" href="" aria-label="По возрастанию"></a>
+            </li>
+          </ul>
         </section>
       </div>
 
@@ -170,13 +170,11 @@
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="goods__list">
           <li class="goods__item">
-            <div class="goods__image-buttons">
-              <div class="goods__image">
-                <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Любительская селфи-палка">
-                <div class="goods__buttons">
-                  <button class="goods__cart" type="button">В корзину</button>
-                  <button class="goods__compare">Добавить к сравнению</button>
-                </div>
+            <div class="goods__image">
+              <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Любительская селфи-палка">
+              <div class="goods__actions">
+                <a class="goods__cart" href="#">В корзину</a>
+                <a class="goods__compare" href="#">Добавить к сравнению</a>
               </div>
             </div>
             <div class="goods__info">
@@ -185,13 +183,11 @@
             </div>
           </li>
           <li class="goods__item">
-            <div class="goods__image-buttons">
-              <div class="goods__image">
-                <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
-                <div class="goods__buttons">
-                  <button class="goods__cart" type="button">В корзину</button>
-                  <button class="goods__compare">Добавить к сравнению</button>
-                </div>
+            <div class="goods__image">
+              <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
+              <div class="goods__actions">
+                <a class="goods__cart" href="#">В корзину</a>
+                <a class="goods__compare" href="#">Добавить к сравнению</a>
               </div>
             </div>
             <div class="goods__info">
@@ -200,13 +196,11 @@
             </div>
           </li>
           <li class="goods__item">
-            <div class="goods__image-buttons">
-              <div class="goods__image">
-                <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
-                <div class="goods__buttons">
-                  <button class="goods__cart" type="button">В корзину</button>
-                  <button class="goods__compare">Добавить к сравнению</button>
-                </div>
+            <div class="goods__image">
+              <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <div class="goods__actions">
+                <a class="goods__cart" href="#">В корзину</a>
+                <a class="goods__compare" href="#">Добавить к сравнению</a>
               </div>
             </div>
             <div class="goods__info">
@@ -215,13 +209,11 @@
             </div>
           </li>
           <li class="goods__item goods__item--new">
-            <div class="goods__image-buttons">
-              <div class="goods__image">
-                <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                <div class="goods__buttons">
-                  <button class="goods__cart" type="button">В корзину</button>
-                  <button class="goods__compare">Добавить к сравнению</button>
-                </div>
+            <div class="goods__image">
+              <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              <div class="goods__actions">
+                <a class="goods__cart" href="#">В корзину</a>
+                <a class="goods__compare" href="#">Добавить к сравнению</a>
               </div>
             </div>
             <div class="goods__info">
@@ -234,7 +226,7 @@
 
       <section class="pagination">
         <h2 class="visually-hidden">Страница</h2>
-        <button class="pagination__control pagination__control--back">Назад</button>
+        <a class="pagination__control" href="#">Назад</a>
         <ol class="pagination__list">
           <li class="pagination__item">
             <a class="pagination__link pagination__link--active">1</a>
@@ -246,7 +238,7 @@
             <a class="pagination__link pagination__link">3</a>
           </li>
         </ol>
-        <button class="pagination__control pagination__control--back">Вперёд</button>
+        <a class="pagination__control" href="#">Вперёд</a>
       </section>
     </main>
 
@@ -265,14 +257,14 @@
         <a class="page-footer__logo" href="blank.html">
           <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Интернет-магазин «Девайс»">
         </a>
-        <div class="page-footer__address-services-contacts-block address-services-contacts-block">
-          <address class="address-services-contacts-block__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-          <div class="address-services-contacts-block__services">
-            <a class="address-services-contacts-block__services__link" href="blank.html">Доставка</a>
-            <a class="address-services-contacts-block__services__link" href="blank.html">Гарантия</a>
-            <a class="address-services-contacts-block__services__link" href="blank.html">Контакты</a>
+        <div class="page-footer__services-contacts services-contacts">
+          <address class="services-contacts__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+          <div class="services-contacts__services">
+            <a class="services-contacts__link" href="blank.html">Доставка</a>
+            <a class="services-contacts__link" href="blank.html">Гарантия</a>
+            <a class="services-contacts__link" href="blank.html">Контакты</a>
           </div>
-          <a class="address-services-contacts-block__contacts" href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
+          <a class="services-contacts__contacts" href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
         </div>
         <div class="page-footer__social-academy">
           <ul class="page-footer__social-list social-list">
