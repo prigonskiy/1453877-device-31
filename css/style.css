@@ -324,6 +324,7 @@ input[type="radio"].visually-hidden {
   font-size: 47px;
   line-height: 58px;
   color: var(--basic-black);
+  margin: 0;
 }
 
 /* breadcrumbs */
