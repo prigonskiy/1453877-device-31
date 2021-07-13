@@ -58,6 +58,7 @@
   --special-yellow-dark-opaque: rgba(240, 197, 46, 0.5);
   --special-yellow-dark-more-opaque: rgba(240, 197, 46, 0.3);
   --special-yellow-darker: #FFC600;
+  --goods-background: rgba(238, 238, 238, 0.7);
   --basic-white-light-transparent: rgba(255, 255, 255, 0.6);
   --basic-white-medium-transparent: rgba(255, 255, 255, 0.3);
   --basic-white-lighter-transparent: rgba(255, 255, 255, 0.7);
@@ -177,6 +178,10 @@ input[type="radio"].visually-hidden {
 }
 
 .device-link--modal {
+  width: 200px;
+}
+
+.device-link--goods {
   width: 200px;
 }
 
@@ -1504,10 +1509,50 @@ input[type="radio"].visually-hidden {
   grid-template-rows: 454px 454px;
 }
 
+.goods__item {
+  position: relative;
+}
+
+.goods__actions {
+  display: none;
+}
+
+.goods__item:hover .goods__actions {
+  position: absolute;
+  top: 180px;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.goods__item:hover::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 380px;
+  background-color: var(--goods-background);
+}
+
 .goods__compare {
+  display: block;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.1em;
+  align-self: center;
+  margin-top: 13px;
+  opacity: 0.5;
+}
+
+.goods__compare:hover {
+  opacity: 1;
+}
+
+.goods__compare:active {
+  opacity: 0.2;
 }
 
 .goods__title {
