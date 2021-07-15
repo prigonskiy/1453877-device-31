@@ -81,9 +81,12 @@ if (pageIndex) {
 
 let feedback = document.querySelector(".device-link--feedback");
 let modalFeedback = document.querySelector(".modal--feedback");
-
 let map = document.querySelector(".contacts__map");
 let modalMap  = document.querySelector(".modal--map");
+let form = modalFeedback.querySelector(".feedback");
+let formName = modalFeedback.querySelector("input[name=name]");
+let formMail = modalFeedback.querySelector("input[name=mail]");
+let formText = modalFeedback.querySelector("textarea[name=feedback]");
 
 
 if (pageIndex) {
@@ -100,6 +103,15 @@ if (pageIndex) {
       modalMap.classList.add("modal--active");
     })
   }
+
+  form.addEventListener("submit", function(evt) {
+    if (!formName.value || !formMail.value || !formText.value) {
+      evt.preventDefault();
+      modalFeedback.classList.remove("modal--error");
+      modalFeedback.offsetWidth = modalFeedback.offsetWidth;
+      modalFeedback.classList.add("modal--error");
+    }
+  })
 }
 
 /* modal close */
@@ -111,6 +123,7 @@ if (closeButtons) {
     closeButtons[i].addEventListener("click", function() {
       if (this.parentElement) {
         this.parentElement.classList.remove("modal--active");
+        this.parentElement.classList.remove("modal--error");
       }
     })
   }
@@ -122,6 +135,7 @@ window.addEventListener("keydown", function(evt) {
       if (openPopup) {
           evt.preventDefault();
           openPopup.classList.remove("modal--active");
+          openPopup.classList.remove("modal--error");
       }
   }
 });
