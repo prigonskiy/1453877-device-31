@@ -85,7 +85,7 @@ let map = document.querySelector(".contacts__map");
 let modalMap  = document.querySelector(".modal--map");
 let form = modalFeedback.querySelector(".feedback");
 let formName = modalFeedback.querySelector("input[name=name]");
-let formMail = modalFeedback.querySelector("input[name=email]");
+let formMail = modalFeedback.querySelector("input[name=mail]");
 let formText = modalFeedback.querySelector("textarea[name=feedback]");
 
 
